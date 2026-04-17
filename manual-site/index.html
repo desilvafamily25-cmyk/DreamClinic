@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamClinic Operations Manual</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <div class="hero-card">
+          <p class="eyebrow">DreamClinic GP Manual</p>
+          <h1>Readable, structured access to the complete operations manual</h1>
+          <p>
+            The source files stay unchanged. This website now organises both the compiled full manual and the supporting part files,
+            with top tabs for the main categories and a left-side navigation for every document and subsection.
+          </p>
+        </div>
+      </header>
+
+      <div class="tabs-bar">
+        <nav class="top-tabs" data-top-tabs></nav>
+      </div>
+
+      <main class="main-layout">
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <h2>Manual Navigation</h2>
+          </div>
+          <div class="search-wrap">
+            <input type="search" placeholder="Search within the current part..." data-search>
+          </div>
+          <div data-side-nav></div>
+        </aside>
+
+        <section class="content-panel">
+          <div class="content-header">
+            <h2 data-current-title></h2>
+            <p data-current-subtitle></p>
+            <div class="content-meta" data-current-count></div>
+          </div>
+          <div class="content-body" data-content></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./manual-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
